@@ -25,7 +25,7 @@ packs.forEach(pack => {
   fs.writeFileSync(`./dist/packs/${pack}.plist`, sourcePlist, 'utf-8')
 })
 
-function formatJSON(json: { [key: string]: string }): TextReplacementEntry[] {
+function formatJSON(json: StringMap): TextReplacementEntry[] {
   return Object.keys(json).map(key => {
     return {
       phrase: json[key],
