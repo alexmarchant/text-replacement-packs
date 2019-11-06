@@ -1,0 +1,16 @@
+{
+  "name": "text-replacement-packs",
+  "private": true,
+  "scripts": {
+    "build": "npx ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "plist": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.6",
+    "@types/plist": "^3.0.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
+  }
+}
